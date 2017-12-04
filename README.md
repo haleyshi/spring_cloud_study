@@ -60,8 +60,8 @@ curl  -X POST http://localhost:8041/refresh
 http://localhost:8041/hello
 
 ## Config Server with Eureka
-http://localhost:8040/microservice-config-client-eureka-dev.properties
-http://localhost:8040/microservice-config-client-eureka/dev
+http://localhost:8050/microservice-config-client-eureka-dev.properties
+http://localhost:8050/microservice-config-client-eureka/dev
 
 ## Config Client with Eureka
 http://localhost:8051/hello
