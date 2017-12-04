@@ -59,3 +59,27 @@ http://localhost:8040/microservice-config-client/dev
 http://localhost:8041/hello
 curl  -X POST http://localhost:8041/refresh
 http://localhost:8041/hello
+
+## Config Server with Eureka
+http://localhost:8040/microservice-config-client-eureka-dev.properties
+http://localhost:8040/microservice-config-client-eureka/dev
+
+## Config Client with Eureka
+http://localhost:8051/hello
+curl  -X POST http://localhost:8051/refresh
+http://localhost:8051/hello
+
+## Zuul Api Gateway
+### Default routing
+http://localhost:8060/microservice-provider-user/1
+http://GATEWAY:GATEWAY_PORT/想要访问的Eureka服务id的小写/<uri> >> http://想要访问的Eureka服务id的小写:该服务端口/<uri>
+
+### Self defined routing
+http://localhost:8060/user/1
+
+### Hide some API from public
+http://localhost:8050/microservice-provider-user/1  >>> Get 404
+http://localhost:8060/movie/ribbon/1
+
+
+
