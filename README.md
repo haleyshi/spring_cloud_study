@@ -77,7 +77,7 @@ http://GATEWAY:GATEWAY_PORT/想要访问的Eureka服务id的小写/<uri> >> http
 http://localhost:8060/user/1
 
 ### Hide some API from public
-http://localhost:8050/microservice-provider-user/1  >>> Get 404
+http://localhost:8060/microservice-provider-user/1  >>> Get 404
 http://localhost:8060/movie/ribbon/1
 
 ## Docker for Spring Cloud Env.
