@@ -1,0 +1,17 @@
+server:
+  port: 8050
+spring:
+  application:
+    name: microservice-config-server-eureka
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/haleyshi/spring_cloud_study     # 配置git仓库的地址
+          search-paths: config-repo                               # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username: haleyshi                                      # git仓库的账号
+          password:                                       # git仓库的密码
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
