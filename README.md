@@ -51,3 +51,11 @@ http://localhost:8011/hystrix.stream
 http://localhost:8021/hystrix.stream
 http://localhost:8031/turbine.stream
 
+## Config Server
+http://localhost:8040/microservice-config-client-dev.properties
+http://localhost:8040/microservice-config-client/dev
+
+## Config Client
+http://localhost:8041/hello
+curl  -X POST http://localhost:8041/refresh
+http://localhost:8041/hello
