@@ -23,6 +23,10 @@
     <module>microservice-config-server-eureka</module>
     <module>microservice-config-client-eureka</module>
     <module>microservice-api-gateway</module>
+    <module>microservice-zipkin-server</module>
+    <module>microservice-provider-user-with-zipkin</module>
+    <module>microservice-consumer-movie-feign-with-zipkin</module>
+    <module>microservice-api-gateway-with-zipkin</module>
   </modules>
 
   <!-- 使用最新的spring-boot版本 -->

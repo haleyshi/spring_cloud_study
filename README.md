@@ -1,12 +1,12 @@
 # spring_cloud_study
 
 	C:\Windows\System32\drivers\etc\hosts, /etc/hosts
-	127.0.0.1 discovery peer1 peer2 config-server gateway movie user feign ribbon
+	127.0.0.1 discovery peer1 peer2 zipkin config-server gateway
+	127.0.0.1 movie user feign ribbon
   
 
-## Eureka HA
+## Eureka
 http://discovery:8761
- 
  
 ## Eureka HA
 java -jar microservice-discovery-eureka-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer1
@@ -79,6 +79,10 @@ http://localhost:8060/user/1
 ### Hide some API from public
 http://localhost:8060/microservice-provider-user/1  >>> Get 404
 http://localhost:8060/movie/ribbon/1
+
+## Zipkin Server
+http://localhost:8070/
+http://localhost:8061/movie/feign/1
 
 ## Docker for Spring Cloud Env.
 

@@ -5,5 +5,4 @@
 target/
 .classpath
 *.jar
-.springBeans
 .DS_Store

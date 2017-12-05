@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: microservice-zipkin-server
+server:
+  port: 8070
+eureka:
+  instance:
+    hostname: zipkin
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+
