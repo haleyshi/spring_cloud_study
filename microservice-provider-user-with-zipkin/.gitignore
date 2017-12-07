@@ -6,3 +6,4 @@ target/
 .classpath
 *.jar
 .DS_Store
+.springBeans
